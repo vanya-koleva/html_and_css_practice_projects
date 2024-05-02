@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="heading">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">A survey to determine the satisfaction of the students of freeCodeCamp</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+            <label for="name" id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <label for="email" id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <label for="number" id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="120" placeholder="21"><br>
+                
+            <label for="dropdown" id="dropdown-label"><b>How do you grade the courses offered by freeCodeCamp?</b></label><br>
+            <select id="dropdown" name="satisfaction" class="form">
+                <option value="Excellent">Excellent</option>
+                <option value="Very good">Very good</option>
+                <option value="Good">Good</option>
+                <option value="Satisfactory">Satisfactory</option>
+                <option value="Insufficient">Insufficient</option>
+            </select>
+
+            <label id="button-area-label"><b>What device do you usually use to access freeCodeCamp?</b></label><br>
+            <input type="radio" class="radio" name="device" value="laptop" checked>Laptop<br>
+            <input type="radio" class="radio" name="device" value="phone">Phone<br>
+            <input type="radio" class="radio" name="device" value="tablet">Tablet<br>
+
+            <label id="checkbox-area-label"><b>What do you enjoy the most about our service? (check all that apply)</b></label><br>
+            <input type="checkbox" name="exercises" value="exercises" checked>Useful exercises<br>
+            <input type="checkbox" name="ease" value="ease">Ease of use<br>
+            <input type="checkbox" name="interesting" value="interesting">Interesting challenges<br>
+
+            <label id="comments-label"><b>Additional Comments:</b></label>
+            <textarea id="comments" style= height:120px placeholder="Enter your comments"></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
